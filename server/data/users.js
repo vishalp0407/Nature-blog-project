@@ -1,0 +1,42 @@
+export default [
+  {
+    _id: "66b9e1f8a23b7c4a9f1a1001",
+    username: "nature_lover",
+    email: "naturelover@example.com",
+    password: "123456",
+    role: "user",
+    isBlocked: false,
+  },
+  {
+    _id: "66b9e1f8a23b7c4a9f1a1002",
+    username: "ocean_explorer",
+    email: "oceanexplorer@example.com",
+    password: "123456",
+    role: "user",
+    isBlocked: false,
+  },
+  {
+    _id: "66b9e1f8a23b7c4a9f1a1003",
+    username: "mountain_guide",
+    email: "mountainguide@example.com",
+    password: "123456",
+    role: "user",
+    isBlocked: false,
+  },
+  {
+    _id: "66b9e1f8a23b7c4a9f1a1004",
+    username: "desert_wanderer",
+    email: "desertwanderer@example.com",
+    password: "123456",
+    role: "user",
+    isBlocked: false,
+  },
+  {
+    _id: "66b9e1f8a23b7c4a9f1a1005",
+    username: "admin_master",
+    email: "admin@example.com",
+    password: "123456",
+    role: "admin",
+    isBlocked: false,
+  },
+];
