@@ -4,7 +4,14 @@
   "main": "main.js",
   "type": "module",
   "scripts": {
-    "server": "nodemon server/main.js"
+    "server": "nodemon server/main.js",
+    "data:import": "node server/seeder.js",
+    "data:destroy": "node server/seeder.js -d"
+  },
+  "imports": {
+    "#data/*": "./server/data/*",
+    "#config/*": "./server/config/*",
+    "#models/*": "./server/models/*"
   },
   "keywords": [],
   "author": "Vishal Prajapati",

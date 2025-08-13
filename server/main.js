@@ -1,8 +1,8 @@
 import express from "express";
 import dotenv from "dotenv";
 
-import posts from "./data/posts.js";
-import connectDB from "./config/db.config.js";
+import posts from "#data/posts.js";
+import connectDB from "#config/db.config.js";
 
 dotenv.config();
 connectDB();
