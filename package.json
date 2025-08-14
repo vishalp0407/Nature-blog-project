@@ -11,7 +11,10 @@
   "imports": {
     "#data/*": "./server/data/*",
     "#config/*": "./server/config/*",
-    "#models/*": "./server/models/*"
+    "#models/*": "./server/models/*",
+    "#controllers/*": "./server/controllers/*",
+    "#routes/*": "./server/routes/*",
+    "#middlewares/*": "./server/middlewares/*"
   },
   "keywords": [],
   "author": "Vishal Prajapati",
