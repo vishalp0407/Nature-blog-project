@@ -1,5 +1,6 @@
 import React from "react";
 import { useGetAllPostQuery } from "../../slices/postApiSlice";
+import { Link } from "react-router-dom";
 
 const Post = () => {
   const { data: posts, isLoading, isError, error } = useGetAllPostQuery();
@@ -14,9 +15,9 @@ const Post = () => {
       ) : (
         <>
           {posts.map((post) => (
-            <div key={post._id}>
+            <Link key={post._id} to={`/post/${post._id}`}>
               <h1>{post.title}</h1>
-            </div>
+            </Link>
           ))}
         </>
       )}

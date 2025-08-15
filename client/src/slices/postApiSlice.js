@@ -10,7 +10,14 @@ export const PostApiSlice = apiSlice.injectEndpoints({
       keepUnusedDataFor: 5,
       providesTags: ["Post"],
     }),
+    getPostDetail: builder.query({
+      query: (postId) => ({
+        url: `${POSTS_URL}/${postId}`,
+      }),
+      keepUnusedDataFor: 5,
+      providesTags: ["Post"],
+    }),
   }),
 });
 
-export const { useGetAllPostQuery } = PostApiSlice;
+export const { useGetAllPostQuery, useGetPostDetailQuery } = PostApiSlice;
