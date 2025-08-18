@@ -13,13 +13,14 @@ const Post = () => {
       ) : isError ? (
         <h1>Error</h1>
       ) : (
-        <>
+        <div className="flex  items-center justify-center flex-wrap">
           {posts.map((post) => (
             <Link key={post._id} to={`/post/${post._id}`}>
+              <img src={post.image} className="w-[50px] h-[50px]" />
               <h1>{post.title}</h1>
             </Link>
           ))}
-        </>
+        </div>
       )}
     </div>
   );

@@ -5,6 +5,7 @@ const Home = () => {
   return (
     <div>
       <h2> my Home Screen</h2>
+      {/* <img src="/images/acrtic-wildlife.jpg" /> */}
       <Post />
     </div>
   );
